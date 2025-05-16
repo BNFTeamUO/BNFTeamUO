@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BNF</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -336,8 +335,8 @@
     <div class="nav" id="nav">
         <div>
             <div class="toggle-btn" onclick="toggleNav()">≪</div>
-            <a href="#home" class="active" onclick="showSection('home')">Главная</a>
-            <a href="#games" onclick="showSection('games')">Игры</a>
+            <a href="#home" class="" onclick="showSection('home')">Главная</a>
+            <a href="#games" onclick="showSection('games')" class="active">Игры</a>
             <a href="#team" onclick="showSection('team')">Участники</a>
         </div>
         <div class="arrow" onclick="history.back()">←</div>
@@ -346,32 +345,32 @@
         <img src="logo.png" alt="BNF" class="logo" onclick="showSection('home')">
     </div>
     <div class="main" id="main">
-        <div id="home" class="section active">
-            <div class="section-content">
+        <div id="home" class="section" style="display: none;">
+            <div class="section-content slide-out">
                 <h2>Добро пожаловать в BNF!</h2>
                 <p>BNF - Команда разработчиков игр.</p>
             </div>
         </div>
 
-        <div id="games" class="section">
-            <div class="section-content">
+        <div id="games" class="section active" style="display: block;">
+            <div class="section-content" style="transform: translateX(0px); opacity: 1;">
                 <h2>Наши игры</h2>
                 <div class="game-list">
                     <div class="game-item">
                         <h3>Грибной Огонь</h3>
                         <p>Грибной огонь - ещё одна оригинальная игра от BNF, где вам предстоит выращивать грибы и использовать их как валюту, для обмена на боеприпасы!</p>
-                        <a href="https://vitalokek2.github.io/MushroomFirepower/" class="play-button" target="_blank">Скачать</a>
+                        <a href="https://github.com/BNFTeamUO/bnfteamuo/raw/refs/heads/main/Грибной%20огонь.zip" class="play-button" target="_blank">Скачать на Windows</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="team" class="section">
-            <div class="section-content">
+        <div id="team" class="section" style="display: none;">
+            <div class="section-content" style="transform: translateX(0px); opacity: 1;">
                 <h2>Участники команды</h2>
                 <div class="team-list">
                     <table style="width: 100%; border-collapse: collapse;">
-                        <tr>
+                        <tbody><tr>
                             <th style="text-align: left; padding: 8px; border-bottom: 1px solid #e65100;">Ник</th>
                             <th style="text-align: left; padding: 8px; border-bottom: 1px solid #e65100;">Должность</th>
                             <th style="text-align: left; padding: 8px; border-bottom: 1px solid #e65100;">Роль</th>
@@ -396,7 +395,7 @@
                             <td style="padding: 8px;">Программист</td>
                             <td style="padding: 8px;">Создатель</td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
             </div>
         </div>
@@ -502,6 +501,6 @@
             });
         }
     </script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'935584318855be15',t:'MTc0NTQ5NjgyNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-</body>
-</html>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'935584318855be15',t:'MTc0NTQ5NjgyNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
